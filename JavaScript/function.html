@@ -13,17 +13,31 @@
         }
     </style>
 </head>
-<body>
+<body id="ooo">
     <div id="adi">
         <button onclick="one()">Click</button>
         <p id="ggg"></p>
+    </div>
+    <BR></BR>
+    <div>
+        <button onclick="red()">RED</button>
+        <button onclick="green()">GREEN</button>
+        <button  onclick="blue()">BLUE</button>
     </div>
     
     <script>
         function one(){
             document.getElementById("ggg").innerHTML="<h1>hello";
         }
-        
+        function red(){
+            document.getElementById("ooo").style.backgroundColor="red";
+        }
+        function green(){
+            document.getElementById("ooo").style.backgroundColor="green";
+        }
+        function blue(){
+            document.getElementById("ooo").style.backgroundColor="blue";
+        }
         // function abes(){
         //     document.write("python program");
         // }

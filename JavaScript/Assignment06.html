@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 400px;
+            width: 400px;
+            border: 4px black solid;
+            margin: auto;
+            margin-top: 70px;
+            background-color: bisque;
+        }
+        #aa{
+            
+            display: flex;
+            
+            }
+            .aaa{
+                margin: 20px;
+                display: flex;
+            }
+            #sec{
+                margin-top: 12px;
+                border: 4px black solid;
+                height: 60px;
+                width: 200px;
+                /* padding-left: 20px; */
+                text-align: center;
+                padding: auto;
+                
+            }
+            button{
+                height: 50px;
+                width: 50px;
+                border: 3px black solid;
+                margin-left: 100px;
+                margin-top: 70px;
+            }
+            p{
+                border: 3px black solid;
+                height: 50px;
+                width: 60px;
+                margin: auto;
+                margin-top: 50px;
+                
+            }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div id="aa">
+        <div class="aaa">
+            <img src="counter.png" alt="Counter" height="50px" width="80px">
+        </div>
+        <div class="aaa" id="sec">
+            <h1>Counter App</h1>
+        </div>
+        </div>
+         
+    <div>
+        <p id="fun"></p>
+    </div>
+
+    <div >
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+    </div>
+    </div>
+    <script>
+        var a=0;
+        
+        function add(){
+            if(a<10){
+                
+                a=a+1;
+                document.getElementById("fun").innerText=a;
+                
+            }
+            else{
+                alert("Maximum value reached");
+            }
+        }
+        function sub(){
+            if(a>0){
+                
+                a=a-1;
+                document.getElementById("fun").innerText=a;
+                
+            }
+            else{
+                alert("Minimum value reached");
+            }
+        }
+document.getElementById("fun").innerText=a;
+    </script>
+    
+
+</body>
+</html>
