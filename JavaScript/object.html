@@ -8,9 +8,13 @@
 <body>
     <p id="adi"></p>
     <script>
-        const toy=new Array("toy1","toy2","toy3");
-        toy[2]="APPLE";
-        document.getElementById("adi").innerHTML=toy[1];
+        // object notation
+        const person=new Object({
+            firstname:"maahi",
+            lastname:"garg",
+            age:46
+        });
+        document.getElementById("adi").innerHTML=person.age;
     </script>
 </body>
 </html>
