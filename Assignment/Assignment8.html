@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Book1={
+            bookname:"c++",
+            bookauthor:"maahigarg",
+            publishedon:2012
+        }
+        const Book2={
+            bookname:"python",
+            bookauthor:"sayam",
+            publishedon:2006
+        }
+        const Book3={
+            bookname:"hellokitty",
+            bookauthor:"kitty",
+            publishedon:2025
+        }
+        const Book4={
+            bookname:"recipes",
+            bookauthor:"chef",
+            publishedon:2022
+        }
+        const Book5={
+            bookname:"xyz",
+            bookauthor:"robinhood",
+            publishedon:1980
+        }
+        const lib=[{...Book1},{...Book2},{...Book3},{...Book4},{...Book5}];
+        document.write(JSON.stringify(lib));
+    </script>
+</body>
+</html>
